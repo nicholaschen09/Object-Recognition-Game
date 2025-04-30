@@ -17,12 +17,26 @@ export function Header() {
         </div>
         <nav className="flex items-center gap-4">
           <Link href="/collection">
-            <Button variant={pathname === "/collection" ? "secondary" : "link"} className="text-primary-foreground">
+            <Button
+              variant={pathname === "/collection" ? "secondary" : "link"}
+              className={
+                pathname === "/collection"
+                  ? "text-blue-500"
+                  : "text-primary-foreground"
+              }
+            >
               My Collection
             </Button>
           </Link>
           <Link href="/profile">
-            <Button variant={pathname === "/profile" ? "secondary" : "link"} className="text-primary-foreground">
+            <Button
+              variant={pathname === "/profile" ? "secondary" : "link"}
+              className={
+                pathname === "/profile"
+                  ? "text-blue-500"
+                  : "text-primary-foreground"
+              }
+            >
               Profile
             </Button>
           </Link>
